@@ -26,13 +26,20 @@ li {
   padding: 0;
 }
 
+figure {
+  margin: 0;
+}
+
 a {
   color: inherit;
+  text-decoration: none;
+  outline: none;
 }
 
 button,
 input {
   color: currentColor;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
 }

@@ -1,1 +1,43 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P-Regular';
+    --card-title-font-weight: "wght" 715;
+    --main-font-weight: 410;
+    --main-font-size: 18px;
+    --card-text-line-height: 21px;
+    --header-title-font-size: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
+    --card-title-font-size: var(--main-font-size, 18px);
+    --button-font-size: 14px;
+    --logo-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
+    --image-mark-font-size: 14px;
+    --header-margin: 100px clamp(0rem, -8.143rem + 34.74vw, 23.125rem);
+    --main-page-margin: var(--header-margin, 100px clamp(0rem, -8.143rem + 34.74vw, 23.125rem));
+    --page-background-color: #fff;
+    --page-background: repeating-linear-gradient(
+       to right,
+        rgba(211, 211, 211) 0 2px,
+        rgba(211, 211, 211, 0) 2px 4px),
+      repeating-linear-gradient(
+       to bottom,
+        rgba(211, 211, 211) 0 2px,
+        rgba(211, 211, 211, 0) 2px 4px),
+      linear-gradient(
+       to bottom, #e7e7e7 0.01%, #1a1a1a 100%)
+    ;
+    --card-background-color: #fff;
+    --text-stroke-color: #8D829D;
+    --accent-color: #000;
+    --button-text-color: #fff;
+    --button-hover-background: var(--accent-color, #000);
+    --button-after-hover-background: #fff;
+    --button-hover-color: #fff;
+    --animation-sparks-color: #FF0000;
+    --animation-core-color: #fff;
+    --animation-fill-color: var(--accent-color, #000);
+    --animation-accent-color: #ff0000;
+    --animation-contour-color: var(--accent-color, #000);
+    
+    
+    
+}
