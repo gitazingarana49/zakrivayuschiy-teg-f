@@ -14,8 +14,7 @@
   top: 0;
   z-index: -1;
   width: 100%;
-  min-height: 676px;
-  max-height: 960px;
+  height: 100vh;
   background-size: cover;
   background: var(--page-background);
 }
@@ -125,7 +124,7 @@
   block-size: auto;
   aspect-ratio: 1/1;
   object-fit: cover;
-  object-position: center; 
+  object-position: center;
 }
 
 .card-description {
@@ -311,16 +310,6 @@ button:has(.like-icon:active) .main-body {
   transition: inline-size 0.5s ease-in-out;
 }
 
-.save__button:hover {
-  mix-blend-mode: difference;
-  background-color: var(--button-hover-background, #000);
-}
-
-.save__button:hover .save__button-icon {
-  mix-blend-mode: difference;
-  color: #fff;
-}
-
 .save__button:hover:after {
   inline-size: 100%;
 }
@@ -368,11 +357,6 @@ button:has(.like-icon:active) .main-body {
   inline-size: 261px;
   block-size: 38px;
   padding: 12.5px 116.5px;
-}
-
-.floppy-save__dialog[open] .save__button:hover {
-  mix-blend-mode: difference;
-  color: #fff;
 }
 
 .floppy-save__dialog[open]::backdrop {
