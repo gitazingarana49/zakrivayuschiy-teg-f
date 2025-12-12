@@ -111,12 +111,12 @@
   filter: sepia(0.9);
 }
 
-.blur__filter {
-  filter: blur(0.5em);
-}
-
 .combo-filters {  
   filter: hue-rotate(0.5turn) invert(20%);
+}
+
+.blur__filter {
+  filter: blur(0.5em);
 }
 
 .card-img {
