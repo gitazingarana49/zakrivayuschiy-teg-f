@@ -91,12 +91,12 @@
   }
 }
 
-.grayscale__filter-img {
-  filter: grayscale(0.8);
+.brightness__filter-img {
+  filter: brightness(180%);
 }
 
-.saturate__filter-img {
-  filter: saturate(405%);
+.grayscale__filter-img {
+  filter: grayscale(1);
 }
 
 .hue-rotate__filter-img {
@@ -112,7 +112,7 @@
 }
 
 .blur__filter {
-  filter: blur(0.5em);
+  filter: blur(0.1em);
 }
 
 .combo-filters {
