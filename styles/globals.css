@@ -38,10 +38,12 @@ a {
 
 button,
 input {
+  display: block;
   color: currentColor;
   background-color: transparent;
   font-family: inherit;
   font-size: inherit;
+  cursor: pointer;
 }
 
 ul,
