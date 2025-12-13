@@ -20,13 +20,13 @@
 }
 
 .header {
-  block-size: 327px;
+  min-block-size: 327px;
   margin: var(--header-margin);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--accent-font, 'PressStart2P-Regular'), fantasy, sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), fantasy, sans-serif;
   background-color: inherit;
   outline: solid 2px #000;
 }
@@ -56,7 +56,6 @@
   align-items: center;
   background-color: var(--card-background-color, #fff);
   border: solid 3px #000;
-  overflow: hidden;
 }
 
 .card-title {
@@ -79,7 +78,7 @@
   top: 25px;
   right: 25px;
   z-index: 3;
-  font-family: var(--accent-font, 'PressStart2P-Regular'), fantasy, sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), fantasy, sans-serif;
   font-size: var(--image-mark-font-size, 14px);
   text-shadow: 1px var(--text-stroke-color, #8D829D);
   color: transparent;
@@ -88,6 +87,7 @@
 @supports (-webkit-text-stroke: 1px var(--text-stroke-color, #8D829D)) {
   .image-mark {
     -webkit-text-stroke: 1px var(--text-stroke-color, #8D829D);
+    text-shadow: none;
   }
 }
 
@@ -159,8 +159,7 @@
   transition: border-color 0.3s ease;
 }
 
-.card__icon-button:focus,
-.save__button:focus {
+.button:focus {
   outline: none;
 }
 
@@ -245,7 +244,7 @@ button:has(.like-icon:active) .main-body {
   block-size: 38px;
   text-align: center;
   cursor: pointer;
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.3s ease;
 }
 
 .card__like-button .button__text {
@@ -271,7 +270,7 @@ button:has(.like-icon:active) .main-body {
   background-color: var(--button-hover-background, #000);
 }
 
-.card__like-button:hover .button__text {
+.button__text {
   mix-blend-mode: difference;
   color: #fff;
 }
@@ -330,10 +329,10 @@ button:has(.like-icon:active) .main-body {
 
 .floppy-save__dialog[open] {
   inline-size: 341px;
-  block-size: 191px;
+  min-block-size: 191px;
   padding: 30px 40px;
   position: relative;
-  font-family: var(--accent-font, 'PressStart2P-Regular'), fantasy, sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), fantasy, sans-serif;
   font-size: var(--button-font-size);
   overflow: hidden;
 }
