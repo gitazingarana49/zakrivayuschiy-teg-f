@@ -155,7 +155,7 @@
   outline: none;
 }
 
-.card__icon-button:focus-visible {
+.button:focus-visible {
   border-color: var(--accent-color, #000);
   transition: border-color 0.3s ease;
 }
@@ -243,7 +243,7 @@ button:has(.like-icon:active) .main-body {
   transform: translate(-50%, -50%);
 }
 
-.card__like-button::after {
+.button::after {
   position: absolute;
   content: "";
   top: 0;
@@ -255,12 +255,12 @@ button:has(.like-icon:active) .main-body {
   transition: inline-size 0.5s ease-in-out;
 }
 
-.card__like-button:hover {
+.button:hover {
   mix-blend-mode: difference;
   background-color: var(--button-hover-background, #000);
 }
 
-.card__like-button:hover:after {
+.button:hover:after {
   inline-size: 100%;
 }
 
@@ -280,22 +280,6 @@ button:has(.like-icon:active) .main-body {
   left: 20px;
 }
 
-.save__button:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  inline-size: 0;
-  block-size: 100%;
-  mix-blend-mode: difference;
-  background-color: var(--button-after-hover-background, #fff);
-  transition: inline-size 0.5s ease-in-out;
-}
-
-.save__button:hover:after {
-  inline-size: 100%;
-}
-
 .save__button-icon {
   position: absolute;
   top: 17px;
@@ -303,8 +287,7 @@ button:has(.like-icon:active) .main-body {
   color: #000;
 }
 
-.save__button:focus-visible,
-.card__like-button:focus-visible {
+.button:focus-visible, {
   outline: none;
   box-shadow: 2px 2px 0 var(--accent-color, #000);
   transition: box-shadow 0.3s ease;
@@ -326,9 +309,10 @@ button:has(.like-icon:active) .main-body {
 }
 
 .floppy-save__dialog[open] .button__text {
-  top: 40px;
+  top: 30px;
   left: 99px;
   text-transform: uppercase;
+  line-height: var(--modal-text-line-height, 150%);
 }
 
 .floppy-save__dialog[open] .save__button {
