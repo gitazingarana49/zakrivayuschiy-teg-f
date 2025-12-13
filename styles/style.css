@@ -143,6 +143,8 @@
 }
 
 .button__text {
+  position: absolute;
+  z-index: 2;
   font-family: var(--accent-font, 'PressStart2P-Regular'), fantasy, sans-serif;
   font-size: var(--button-font-size, 14px);
   mix-blend-mode: difference;
@@ -248,9 +250,7 @@ button:has(.like-icon:active) .main-body {
 }
 
 .card__like-button .button__text {
-  position: absolute;
   transform: translate(-50%, -50%);
-  z-index: 2;
 }
 
 .card__like-button::after {
@@ -270,11 +270,6 @@ button:has(.like-icon:active) .main-body {
   background-color: var(--button-hover-background, #000);
 }
 
-.button__text {
-  mix-blend-mode: difference;
-  color: #fff;
-}
-
 .card__like-button:hover:after {
   inline-size: 100%;
 }
@@ -291,10 +286,8 @@ button:has(.like-icon:active) .main-body {
 }
 
 .save__button .button__text {
-  position: absolute;
   bottom: 17px;
   left: 20px;
-  z-index: 2;
 }
 
 .save__button:after {
@@ -338,13 +331,11 @@ button:has(.like-icon:active) .main-body {
 }
 
 .floppy-save__dialog[open] .save__button-icon {
-  position: absolute;
   top: 42px;
   left: 40px;
 }
 
 .floppy-save__dialog[open] .button__text {
-  position: absolute;
   top: 40px;
   left: 99px;
   text-transform: uppercase;
