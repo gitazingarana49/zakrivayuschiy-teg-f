@@ -284,6 +284,10 @@ button:has(.like-icon:active) .main-body {
   left: 139px;
 }
 
+.save__button:hover {
+  mix-blend-mode: hard-light;
+}
+
 .button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--accent-color, #000);
