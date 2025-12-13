@@ -13,7 +13,6 @@
     --image-mark-font-size: 14px;
     --header-margin: 100px clamp(0rem, -8.143rem + 34.74vw, 23.125rem);
     --main-page-margin: var(--header-margin, 100px clamp(0rem, -8.143rem + 34.74vw, 23.125rem));
-    --page-background-color: #fff;
     --page-background: repeating-linear-gradient(
        to right,
         rgba(211, 211, 211) 0 2px,
@@ -25,6 +24,7 @@
       linear-gradient(
        to bottom, #e7e7e7 0.01%, #1a1a1a 100%)
     ;
+    --header-background-color: #fff;
     --card-background-color: #fff;
     --text-stroke-color: #8D829D;
     --accent-color: #000;
