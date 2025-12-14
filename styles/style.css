@@ -10,12 +10,12 @@
 }
 
 .header {
-  min-block-size: 327px;
-  margin: var(--header-margin);
+  block-size: fit-content;
+  margin: var(--header-margin, 100px clamp(0rem, -8.143rem + 34.74vw, 23.125rem));
+  padding: var(--header-padding, clamp(120px, calc(116.479px + 0.939vw), 130px) clamp(16px, calc(-21.324px + 9.953vw), 122px));
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-family: var(--accent-font, 'PressStart2P'), fantasy, sans-serif;
   background: var(--header-background-color, #fff);
   outline: solid 2px #000;
@@ -23,7 +23,7 @@
 
 .logo {
   font-size: var(--logo-size);
-  padding-block-end: 20px;
+  padding-block-end: 4%;
 }
 
 .header-title {
@@ -155,10 +155,9 @@
   outline: none;
 }
 
-.card__icon-button:focus-visible {
+.button:has(.like-icon):focus-visible {
   outline: none;
   border-color: var(--accent-color, #000);
-  transition: border-color 0.3s ease;
 }
 
 .heart {
@@ -235,7 +234,6 @@ button:has(.like-icon:active) .main-body {
   inline-size: 130px;
   block-size: 38px;
   text-align: center;
-  transition: box-shadow 0.3s ease;
 }
 
 .card__like-button .button__text {
@@ -254,7 +252,7 @@ button:has(.like-icon:active) .main-body {
   transition: inline-size 0.5s ease-in-out;
 }
 
-.button:hover {
+.button:not(:has(.like-icon)):hover {
   mix-blend-mode: difference;
   color: var(--button-hover-color, #fff);
   background-color: var(--button-hover-background, #000);
@@ -264,12 +262,15 @@ button:has(.like-icon:active) .main-body {
   inline-size: 100%;
 }
 
+.button-background {
+  background-color: #fff;
+}
+
 .save__button {
   position: relative;
   inline-size: 306px;
   block-size: 84px;
   background-color: #fff;
-  transition: box-shadow 0.3s ease;
   z-index: 1;
 }
 
@@ -284,14 +285,13 @@ button:has(.like-icon:active) .main-body {
   left: 139px;
 }
 
-.save__button:hover {
-  mix-blend-mode: hard-light;
+.button:not(:has(.like-icon)) {
+  transition: box-shadow 0.3s ease;
 }
 
-.button:focus-visible {
+.button:not(:has(.like-icon)):focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--accent-color, #000);
-  transition: box-shadow 0.3s ease;
 }
 
 .floppy-save__dialog[open] {
@@ -328,13 +328,9 @@ button:has(.like-icon:active) .main-body {
   background-color: rgb(0, 0, 0, 0.75);
 }
 
-@media (width >= 375px) {
-  .header {
-    block-size: 368px;
-  }
-
-  .header-title {
-    padding-block-end: 7px;
+@media (width >= 376px) {
+  .logo {
+    padding-block-end: 1%;
   }
 
   .card {

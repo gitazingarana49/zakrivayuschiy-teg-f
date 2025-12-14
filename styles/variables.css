@@ -14,6 +14,7 @@
     --image-mark-font-size: 14px;
     --header-margin: 100px clamp(0rem, -8.143rem + 34.74vw, 23.125rem);
     --main-page-margin: var(--header-margin, 100px clamp(0rem, -8.143rem + 34.74vw, 23.125rem));
+    --header-padding: clamp(120px, calc(116.479px + 0.939vw), 130px) clamp(16px, calc(-21.324px + 9.953vw), 122px);
     --page-background: repeating-linear-gradient(
        to right,
         rgba(211, 211, 211) 0 2px,

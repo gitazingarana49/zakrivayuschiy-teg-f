@@ -172,7 +172,7 @@
           Значит, пришло время посмотреть на задачу под другим углом.</p>
         <p class="card-text">Когда закнчиваются очевидные решения, на помощь приходит магия: clamp() и calc() становятся моими волшебными помошниками :) </p>
         </div>
-           <button type="button" class="card__icon-button">
+           <button type="button" class="card__icon-button button">
           <svg class="like-icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_1494)">
               <g class="heart">
@@ -202,7 +202,7 @@
 Чувствуй хорошее, плохого не существует, между "нет" и "да" выбор только "да".
 Верь в лучшее, жизнь - это танец под присмотром чуткого Бога..."</q> приходилось повторять почаще, особенно когда звучало убого.</p>
         </div>
-           <button type="button" class="card__icon-button">
+           <button type="button" class="card__icon-button button">
           <svg class="like-icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_1494)">
               <g class="heart">
@@ -231,7 +231,7 @@
         <p class="card-text">На данный момент вопросов все же больше, чем имеющихся в голове ответов, но шансы, что на этом пути 
           эволюционный скачок до стадии "разработчик" все таки будет совершён, однако, имеются.</p>
         </div>
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button button">
           <svg class="like-icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_1494)">
               <g class="heart">
@@ -247,13 +247,15 @@
           <span class="button__text">Like</span>
         </button>
       </article>
-      <button type="button" class="save__button button" onclick="window['floppy-save__dialog'].showModal()">
+      <div class="button-background">
+       <button type="button" class="save__button button" onclick="window['floppy-save__dialog'].showModal()">
          <span class="visually-hidden">Открыть</span>
          <svg class="save__button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28">
             <use href="./images/sprite/floppy_mobile.svg#floppy-mobile"></use>
          </svg>
         <span class="button__text">Сохранить на память</span>
-      </button>
+       </button>
+      </div>
       <dialog id="floppy-save__dialog" class="floppy-save__dialog">
         <svg class="save__button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" width="39" height="39">
           <use href="./images/sprite/floppy_dialog.svg#floppy-dialog"></use>
