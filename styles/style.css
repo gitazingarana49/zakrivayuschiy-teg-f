@@ -231,6 +231,12 @@ button:has(.like-icon:active) .main-body {
 
 .button:not(:has(.like-icon)) {
   border: 2px solid currentColor;
+  transition: box-shadow 0.3s ease;
+}
+
+.button:not(:has(.like-icon)):focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--accent-color, #000);
 }
 
 .button:not(:has(.like-icon)):hover {
@@ -288,15 +294,6 @@ button:has(.like-icon:active) .main-body {
   position: absolute;
   top: 17px;
   left: 139px;
-}
-
-.button:not(:has(.like-icon)) {
-  transition: box-shadow 0.3s ease;
-}
-
-.button:not(:has(.like-icon)):focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0 var(--accent-color, #000);
 }
 
 .floppy-save__dialog[open] {
