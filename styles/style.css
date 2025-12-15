@@ -229,6 +229,21 @@ button:has(.like-icon:active) .main-body {
   animation: sparks 0.3s ease-in 0.3s;
 }
 
+.button:not(:has(.like-icon)) {
+  border: 2px solid currentColor;
+}
+
+.button:not(:has(.like-icon)):hover {
+  mix-blend-mode: difference;
+  color: var(--button-hover-color, #fff);
+  background-color: var(--button-hover-background, #000);
+  border: 2px solid white;
+}
+
+.button:hover:after {
+  inline-size: 100%;
+}
+
 .card__like-button {
   position: relative;
   inline-size: 130px;
@@ -250,16 +265,6 @@ button:has(.like-icon:active) .main-body {
   mix-blend-mode: difference;
   background-color: var(--button-after-hover-background, #fff);
   transition: inline-size 0.5s ease-in-out;
-}
-
-.button:not(:has(.like-icon)):hover {
-  mix-blend-mode: difference;
-  color: var(--button-hover-color, #fff);
-  background-color: var(--button-hover-background, #000);
-}
-
-.button:hover:after {
-  inline-size: 100%;
 }
 
 .button-background {
